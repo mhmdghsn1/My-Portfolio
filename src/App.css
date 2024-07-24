@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #93B1A6 !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.profile-name {
+  font-size: 14px;
+  color: #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: #333;
+}
+
+.logo-name {
+  font-weight: bold;
+}
+
+.logo-title {
+  font-size: 16px;
+}
+.custom-social-channels {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; /* توسيط العناصر في المنتصف أفقيًا */
+}
+
+.custom-social-channels ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* توسيط العناصر في المنتصف أفقيًا */
+}
+
+.custom-social-channels li {
+  margin: 0 10px;
+}
+
+.custom-social-channels a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-social-channels a:hover {
+  color: #040D12;
+}
+
+.hide {
+  display: none;
+}
+.about-page {
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-left {
+  
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+
+.about-page-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  padding-top: 15px;
+}
+
+.about-page-right h2 {
+  margin-right: 40px;
+  padding-top: 90px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: italic;
+  max-width: 35%;
+}
+
+.about-page-right p {
+  text-align: left;
+  margin-right: 40px;
+  color: #93B1A6;
+  max-width: 35%;
+}
+
+.about-image {
+  width: 200px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.show-button {
+  background-color: #003aaf;
+  color: #fff;
+  border: none;
+  width: 150px; /* تحديد العرض الثابت للزر */
+  margin-top: 10px;
+}
+
+.about-image {
+  width: 200px;
+  height: auto;
+  margin-right: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: moveImage 6s linear infinite;
+}
+
+@keyframes moveImage {
+  0% {
+    top: 140px;
+    right: -200px;
+    transform: rotate(0deg); /* لا يوجد دوران */
+  }
+  50% {
+    right: 400px;
+    transform: rotate(45deg); /* دوران بزاوية 45 درجة */
+  }
+  100% {
+    top: 350px;
+    right: -200px;
+    transform: rotate(0deg); /* لا يوجد دوران */
+  }
+}
+.timer-container {
+  margin-top: 280px;
+  text-align: center;
+  padding-inline-start: 150px;
+}
+.timer-text-two{
+  font-size: 12px;
+  color: rgb(255, 255, 255,0.5);
+}
+.timer-text {
+  font-size: 24px;
+  color: rgb(255, 255, 255,0.5);
+}
+.text-only-page {
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-only-page h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.text-only-page p {
+  font-size: 16px;
+  color: #fff;
+}
+.skills-page {
+  margin: 50px;
+}
+
+.custom-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.custom-table th:first-child,
+.custom-table td:first-child {
+  border-top-left-radius: 6px;
+}
+
+.custom-table th:last-child,
+.custom-table td:last-child {
+  border-top-right-radius: 6px;
+}
+
+.custom-table tr:last-child td {
+  border-bottom: none;
+}
+
+.skills-page h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.skills-page p {
+  font-size: 18px;
+  color: #fff;
+}
+.pdf-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.pdf-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.nav-link.active {
+  font-weight: bold;
+  /* أي تنسيق آخر للرابط النشط هنا */
+}
+
+.pdf-button:hover {
+  background-color: #0056b3;
+}
+
+.pdf-text {
+  font-size: 14px;
+  color: #333;
+  margin-top: 16px;
+  text-align: center;
+}
